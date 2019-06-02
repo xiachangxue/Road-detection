@@ -1,5 +1,4 @@
-Our Segmentation Approach for RoadTracer Paper
-==============================================
+This is the code for "Road Detection and Centerline Extraction via Deep Recurrent Convolutional Neural Network U-Net".
 
 You will first need to follow dataset preparation instructions from RoadTracer code. You will also need to copy discoverlib folder from RoadTracer code.
 
@@ -24,3 +23,6 @@ Extract graphs from the segmentation outputs:
 Correct the coordinates of the graph vertices by adding an offset (which depends on the region). mapextract.py outputs coordinates corresponding to the imagery. However, the origin of the test image may not be at (0, 0), and fix.py accounts for this.
 
 	python ../utils/fix.py boston outputs/boston.graph outputs/boston.fix.graph
+Reference
+RoadTracer: Automatic Extraction of Road Networks from Aerial Images:https://roadmaps.csail.mit.edu/roadtracer.pdf
+
